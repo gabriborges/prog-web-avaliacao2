@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lista de Tarefas</title>
+
+</head>
+
+<body>
+    <header><h1>Organize suas tarefas</h1></header>
+
+    <div class="lista">
+        <div class="topo">
+            
+            <input type="text" id="NovaTarefa" placeholder="Nova Tarefa">
+            <button id="addTarefa"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+
+        <ul id="listaDeTarefas">
+           <!-- Esta é a estrutura de uma tarefa
+               <li>
+                <span class="textoTarefa">Tarefa 1 (teste)</span>
+                <div>
+                    <button class="botao"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+                -->
+            </li>
+        </ul>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

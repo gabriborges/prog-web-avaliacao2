@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <style>
+        body {
+            background-color: rgb(52, 55, 58);
+            color: aliceblue;
+            text-align: center;
+            text-shadow: 2px 2px rgb(0, 0, 0);
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        #cor {
+            color: rgb(248, 150, 59);
+        }
+
+        #result {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de <span id="cor"> Rublo Russo</span> para <span id="cor">Dólar </span></h1>
+    </header>
+    <section>
+        <h2>Digite o valor em Rublo Russo:</h2>
+        <input type="number" id="value">
+        <button onclick="convert()">Converter</button>
+
+    </section>
+    <textarea name="result" id="result" cols="31" rows="2"></textarea>
+
+
+    <script>
+
+        function convert() {
+            var rublo = document.getElementById("value").value
+            var dolar = rublo * 0.0099
+            var dolar1 = dolar.toFixed(2)
+
+            var text = "US$ " + dolar1 + " Dólares"
+
+            document.getElementById("result").innerText = (text)
+        }
+
+    </script>
+
+</body>
+
+</html>

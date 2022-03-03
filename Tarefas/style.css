@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(240, 237, 231);
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+}
+
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 190, 185);
+    border-radius: 2px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    
+}
+.topo input{
+    width: 500px;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgb(139, 138, 134);
+    border-radius: 2px;
+
+}
+@media screen and (max-width: 400px) {
+    .topo input{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .topo input{
+        width: 170px;
+    }
+}
+.topo button{
+    width: 50px;
+    border-radius: 3px;
+    outline: none;
+}
+.lista{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    background-color: rgb(192, 190, 185);
+    padding: 10px;
+    border-radius: 5px;
+}
+#item{
+    background-color: rgb(216, 216, 216);
+    border: 1px solid rgb(139, 138, 134);
+}
+
+#listaDeTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    
+}
+#listaDeTarefas li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 3px;
+    border: 1px solid rgb(139, 138, 134);
+
+}
+
+#listaDeTarefas button{
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
